@@ -61,7 +61,7 @@ function App() {
         </Routes>
       </main>
       <footer className="layout-shell relative z-10 border-t border-[#e8e2da] py-6 text-center text-xs text-[#756d66] sm:text-sm">
-        AriBnB Lite • Crafted for hosts and travelers
+        Lexzify Properties • Crafted for hosts and travelers
       </footer>
     </div>
   );

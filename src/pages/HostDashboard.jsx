@@ -92,7 +92,7 @@ function HostDashboard() {
           </div>
           <div className="stat-card">
             <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[#8c837d]">Revenue</p>
-            <p className="mt-2 text-3xl font-extrabold text-[#1b1714]">${stats.totalRevenue}</p>
+            <p className="mt-2 text-3xl font-extrabold text-[#1b1714]">₹{stats.totalRevenue}</p>
           </div>
         </div>
       </section>
@@ -119,7 +119,7 @@ function HostDashboard() {
                 <p className="text-sm text-[#6f6761]">
                   {property.location?.city}, {property.location?.country}
                 </p>
-                <p className="text-sm font-semibold text-[#312b27]">${property.pricePerNight}/night</p>
+                <p className="text-sm font-semibold text-[#312b27]">₹{property.pricePerNight}/night</p>
                 <div className="flex gap-2">
                   <Link className="btn-secondary px-3 py-2" to={`/host/listings/${property._id}/edit`}>
                     Edit
@@ -160,7 +160,7 @@ function HostDashboard() {
                 </p>
               </div>
               <div className="text-right">
-                <p className="text-base font-bold text-[#1f1b18]">${booking.totalPrice}</p>
+                <p className="text-base font-bold text-[#1f1b18]">₹{booking.totalPrice}</p>
                 <p
                   className={`text-xs font-bold uppercase tracking-[0.12em] ${
                     booking.bookingStatus === "cancelled"

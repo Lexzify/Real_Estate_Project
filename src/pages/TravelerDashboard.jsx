@@ -89,7 +89,7 @@ function TravelerDashboard() {
             <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[#8c837d]">
               Total Spend
             </p>
-            <p className="mt-2 text-3xl font-extrabold text-[#1b1714]">${stats.totalSpent}</p>
+            <p className="mt-2 text-3xl font-extrabold text-[#1b1714]">₹{stats.totalSpent}</p>
           </div>
         </div>
       </section>
@@ -116,7 +116,7 @@ function TravelerDashboard() {
               </p>
             </div>
             <div className="space-y-2 text-right">
-              <p className="text-base font-bold text-[#1f1b18]">${booking.totalPrice}</p>
+              <p className="text-base font-bold text-[#1f1b18]">₹{booking.totalPrice}</p>
               <button
                 type="button"
                 className="rounded-2xl border border-rose-200 bg-rose-50 px-3 py-2 text-sm font-semibold text-rose-600"

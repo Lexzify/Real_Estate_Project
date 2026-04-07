@@ -22,11 +22,11 @@ function Navbar() {
       <div className="layout-shell flex min-h-18 flex-wrap items-center justify-between gap-3 py-3">
         <Link to="/" className="group inline-flex items-center gap-2">
           <span className="grid h-10 w-10 place-items-center rounded-2xl bg-gradient-to-br from-[#ff5a70] to-[#e13d58] text-lg text-white shadow-[0_14px_26px_-18px_rgba(239,68,96,0.9)]">
-            A
+            L
           </span>
           <div className="leading-tight">
             <p className="text-[1.05rem] font-extrabold text-[#1f1a17] transition group-hover:text-[#e63f5b]">
-              AriBnB Lite
+              Lexzify Properties
             </p>
             <p className="text-[11px] font-medium uppercase tracking-[0.16em] text-[#8e8680]">
               Stay Better

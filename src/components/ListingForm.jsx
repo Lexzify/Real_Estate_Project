@@ -7,7 +7,7 @@ import MapPicker from "./MapPicker";
 const defaultValues = {
   title: "",
   description: "",
-  pricePerNight: 100,
+  pricePerNight: 5000,
   amenities: [],
   categories: [],
   location: {
@@ -110,7 +110,7 @@ function ListingForm({ initialValues = defaultValues, onSubmit, submitText = "Sa
           </div>
           <div>
             <label className="mb-2 block text-xs font-bold uppercase tracking-[0.16em] text-[#8a817a]">
-              Price Per Night *
+              Price Per Night (₹) *
             </label>
             <input
               type="number"

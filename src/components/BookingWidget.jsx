@@ -78,7 +78,7 @@ function BookingWidget({ property, onBooked }) {
     <aside className="card-surface space-y-4 p-5">
       <div className="flex items-end justify-between gap-3">
         <p className="text-2xl font-extrabold text-[#1a1714]">
-          ${property.pricePerNight}
+          ₹{property.pricePerNight}
           <span className="ml-1 text-sm font-medium text-[#6c655f]">night</span>
         </p>
         <span className="rounded-full bg-[#f8f3ee] px-3 py-1 text-xs font-semibold text-[#7b726b]">
@@ -118,9 +118,9 @@ function BookingWidget({ property, onBooked }) {
         {nights > 0 ? (
           <div className="space-y-1">
             <p className="font-semibold">
-              {nights} nights x ${property.pricePerNight}
+              {nights} nights x ₹{property.pricePerNight}
             </p>
-            <p className="text-base font-extrabold text-[#1b1815]">Total ${total}</p>
+            <p className="text-base font-extrabold text-[#1b1815]">Total ₹{total}</p>
           </div>
         ) : (
           "Pick dates to calculate total"

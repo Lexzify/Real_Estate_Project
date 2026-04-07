@@ -196,7 +196,7 @@ function PropertyMap({ properties, onBoundsChange }) {
               <p className="text-xs text-slate-600">
                 {popup.city}, {popup.country}
               </p>
-              <p className="text-sm font-semibold">${popup.pricePerNight}/night</p>
+              <p className="text-sm font-semibold">₹{popup.pricePerNight}/night</p>
               <Link
                 to={`/properties/${popup.id}`}
                 className="inline-block rounded-lg bg-rose-500 px-3 py-1 text-xs font-semibold text-white"

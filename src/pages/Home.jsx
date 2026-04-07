@@ -9,7 +9,7 @@ import useAuthStore from "../store/authStore";
 const DEFAULT_FILTERS = {
   location: "",
   minPrice: 0,
-  maxPrice: 1000,
+  maxPrice: 50000,
   amenities: [],
   categories: [],
   page: 1,

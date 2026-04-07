@@ -2,7 +2,7 @@ import { AMENITIES, CATEGORIES } from "../constants/filterOptions";
 import AmenitySelector from "./AmenitySelector";
 
 function SearchBar({ filters, onChange, onReset }) {
-  const budgetSummary = `$${filters.minPrice} - $${filters.maxPrice}`;
+  const budgetSummary = `₹${filters.minPrice} - ₹${filters.maxPrice}`;
 
   return (
     <section className="glass-panel fade-rise space-y-5 p-5 sm:p-6">
@@ -25,15 +25,15 @@ function SearchBar({ filters, onChange, onReset }) {
           <input
             type="range"
             min="0"
-            max="1000"
-            step="10"
+            max="50000"
+            step="100"
             value={filters.minPrice}
             onChange={(event) =>
               onChange({ minPrice: Number(event.target.value), page: 1 })
             }
             className="w-full accent-rose-500"
           />
-          <p className="mt-2 text-sm font-semibold text-[#524b46]">${filters.minPrice}</p>
+          <p className="mt-2 text-sm font-semibold text-[#524b46]">₹{filters.minPrice}</p>
         </div>
         <div className="card-soft p-3">
           <label className="mb-2 block text-xs font-bold uppercase tracking-[0.18em] text-[#8f8780]">
@@ -41,16 +41,16 @@ function SearchBar({ filters, onChange, onReset }) {
           </label>
           <input
             type="range"
-            min="50"
-            max="2000"
-            step="10"
+            min="100"
+            max="100000"
+            step="500"
             value={filters.maxPrice}
             onChange={(event) =>
               onChange({ maxPrice: Number(event.target.value), page: 1 })
             }
             className="w-full accent-rose-500"
           />
-          <p className="mt-2 text-sm font-semibold text-[#524b46]">${filters.maxPrice}</p>
+          <p className="mt-2 text-sm font-semibold text-[#524b46]">₹{filters.maxPrice}</p>
         </div>
       </div>
 

@@ -17,7 +17,7 @@ function PropertyCard({ property }) {
         </span>
       </div>
       <p className="absolute bottom-3 left-3 text-sm font-bold text-white z-20">
-        ${property.pricePerNight}/night
+        ₹{property.pricePerNight}/night
       </p>
       </div>
 

@@ -34,7 +34,7 @@ function Register() {
       <section className="hero-glow glass-panel flex flex-col justify-between p-7 sm:p-9">
         <div className="space-y-3">
           <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#887f79]">
-            Join AriBnB Lite
+            Join Lexzify Properties
           </p>
           <h1 className="section-title">Create your account and start in minutes.</h1>
           <p className="section-copy">
